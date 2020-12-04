@@ -15,12 +15,12 @@ npm install --save react-number
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-number'
+import {Number} from 'react-number'
 import 'react-number/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <Number value={123.456}/>
   }
 }
 ```

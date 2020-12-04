@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import React from "react";
-import { CLASSNAME_CONTAINER_DIGIT, CLASSNAME_DIGIT, STR_TYPEOF_FUNCTION } from './consts';
-import styles from './styles.module.css';
+import { CLASSNAME_CONTAINER_DIGIT, CLASSNAME_DIGIT, STR_TYPEOF_FUNCTION } from '../consts';
+import styles from '../styles.module.css';
 
 /**
  * Properties of the <Digit /> component

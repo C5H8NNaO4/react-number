@@ -2,10 +2,10 @@ import React, { Fragment,useEffect, useRef, useState } from 'react';
 import clsx from 'clsx';
 
 // @ts-ignore
-import styles from './styles.module.css';
+import styles from '../styles.module.css';
 
 import { Digit, DigitProps } from "./Digit";
-import { CLASSNAME_CONTAINER_NUMBER, CLASSNAME_CONTAINER_DIGIT, STR_EMPTY, STR_TYPEOF_FUNCTION, STR_TYPEOF_NUMBER,STR_TYPEOF_STRING, DEF_PARAM_NP_STRIP, DEF_PARAM_ANIMATE } from './consts';
+import { CLASSNAME_CONTAINER_NUMBER, CLASSNAME_CONTAINER_DIGIT, STR_EMPTY, STR_TYPEOF_FUNCTION, STR_TYPEOF_NUMBER,STR_TYPEOF_STRING, DEF_PARAM_NP_STRIP, DEF_PARAM_ANIMATE } from '../consts';
 
 const classNameDigit = styles[CLASSNAME_CONTAINER_DIGIT];
 const classNameNumber = styles[CLASSNAME_CONTAINER_NUMBER];
