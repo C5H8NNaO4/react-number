@@ -41,7 +41,7 @@ const strSplitNumber = STR_EMPTY;
  * @param {Boolean} props.animate - Enable/Disable animation.
  */
 export const Number = (props) => {
-  const { value, format, numeral, NP, strip = DEF_PARAM_NP_STRIP, animate = DEF_PARAM_ANIMATE, className: numberClassName, digitClassName, digitProps = {}} = props;
+  const { value, format, numeral, NP, strip = DEF_PARAM_NP_STRIP, animate = DEF_PARAM_ANIMATE, className: numberClassName, digitClassName = 'digit', digitProps = {}} = props;
 
   /**@type {Object} */
   const ref = useRef();
@@ -56,6 +56,9 @@ export const Number = (props) => {
 
   useEffect(() => {
     const child = ref.current.querySelector(`.${classNameDigit}>span`);
+    if (!child)
+      return
+    console.log ("NUMBER", child, value)
     const digitHeight = child.getBoundingClientRect().height;
     ref.current.style.height = `${digitHeight}px`;
   }, [ref.current]);
